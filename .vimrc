@@ -12,3 +12,6 @@ set expandtab
 "Improve up/down movement on wrapped lines
 nnoremap j gj
 nnoremap k gk
+"Highlight the text when you hit 81 chars
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
